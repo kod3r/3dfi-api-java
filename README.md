@@ -117,9 +117,7 @@ The client library returns a `MashapeResponse` object that includes the response
 - int code: the HTTP status code.
 - Map<String, String> headers: the response headers.
 - InputStream rawBody: the non-parsed raw body.
-- (JSONObject, String) body: the parsed body.
--- It's String when the API returns a plain string response.
--- It's JSONObject when the API returns a JSON object.
+- (JSONObject) body: the parsed body.
 
 The parsed body containing the data returned by the endpoint can be accessed simply by :
 
