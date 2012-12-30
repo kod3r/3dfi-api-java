@@ -23,6 +23,15 @@ Getting started with the nViso 3D Facial Imaging Java SDK couldn't be easier. Cr
 The `nViso3DFIHttpClient` needs your application ID and key found by logging into the [nViso Developer Platform](https://developer.nviso.net). You can pass these directly to the constructor. Your keys should be kept secret and never shared with anyone!
 
 ```java
+public class Sample {
+	private final static String MY_APP_ID = "__INSERT_YOUR_APP_ID__";
+	private final static String MY_APP_KEY = "__INSERT_YOUR_APP_KEY__";
+	
+	public static void create_client()
+	{	
+		nViso3DFIHttpClient client = new nViso3DFIHttpClient( MY_APP_ID, MY_APP_KEY );
+	}
+}
 ```
 
 ### Processing an Image by URL
@@ -82,7 +91,7 @@ public class Sample {
 
 ### Non-blocking Asychronous Calls for Mobile UI
 
-The `nViso3DFIHttpClient` supports building a mobile application, you often want to consume a remote endpoint asynchronously without blocking the UI. If this is the case, then the client library expects one of your objects to implement the 'requestCompleted' method of the 'MashapeCallback' interface, for example:
+The `nViso3DFIHttpClient` supports building a mobile application, you often want to consume a remote endpoint asynchronously without blocking the UI. If this is the case, then the client library expects one of your objects to implement the `requestCompleted` method of the `MashapeCallback` interface, for example:
 
 ```java
 	nViso3DFIHttpClient client = new nViso3DFIHttpClient( MY_APP_ID, MY_APP_KEY );
