@@ -1,0 +1,2 @@
+javac.exe -cp "./lib;.;./lib/json-20090211.jar;./lib/mashape-java-client-2.0.11.jar" com/nviso/nViso3DFIHttpClient.java
+javac.exe -cp "./lib;.;./lib/json-20090211.jar;./lib/mashape-java-client-2.0.11.jar" Sample.java

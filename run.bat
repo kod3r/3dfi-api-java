@@ -1,0 +1,1 @@
+java.exe -cp "./lib;.;./lib/json-20090211.jar;./lib/mashape-java-client-2.0.11.jar;./lib/gson-2.2.2.jar;./lib/httpclient-4.2.2.jar;./lib/httpcore-4.2.2.jar;./lib/httpmime-4.2.2.jar;./lib/commons-logging-1.1.1.jar" Sample
